@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository is supplementary to the manuscript "Sun, Y., Oleson, K. W., & Zheng, Z. (2025). Modeling urban traffic heat flux in Community Earth System Model".
+This repository is supplementary to the manuscript "**Sun, Y., Oleson, K. W., & Zheng, Z. (2025). Modeling urban traffic heat flux in Community Earth System Model**".
 
 The objectives of this project are:
 
@@ -91,7 +91,7 @@ The scripts listed below show supplementary information such as input data and s
 
 ## Acknowledgements
 
-- This work was supported by the Natural Environment Research Council [grant number UKRI1294], and the UKRI Harmonised Impact Acceleration Account, funded via the Economic & Social Research Council (Grant REF: ES/X004759/1) and Engineering & Physical Sciences Research Council (Grant Ref: EP/X525753/1).
+- This work was supported by the Natural Environment Research Council [grant number UKRI1294], and the UKRI Harmonised Impact Acceleration Account, funded via the Economic & Social Research Council [grant number ES/X004759/1] and Engineering & Physical Sciences Research Council [grant number EP/X525753/1].
 - This work used the [ARCHER2 UK National Supercomputing Service](https://www.archer2.ac.uk) and [JASMIN, the UK’s collaborative data analysis environment](https://www.jasmin.ac.uk). 
 - We gratefully acknowledge Transport for Greater Manchester (TfGM) for providing traffic data to support this research.
 - We appreciate Dr. Xiaodan Xu from Lawrence Berkeley National Laboratory for her valuable insights. 
