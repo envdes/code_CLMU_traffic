@@ -1,5 +1,5 @@
 # code_CLMU_traffic
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16886810.svg)](https://doi.org/10.5281/zenodo.16886810)
 ## Introduction
 
 This repository is supplementary to the manuscript "**Sun, Y., Oleson, K. W., & Zheng, Z. (2025). Modeling urban traffic heat flux in Community Earth System Model**".
