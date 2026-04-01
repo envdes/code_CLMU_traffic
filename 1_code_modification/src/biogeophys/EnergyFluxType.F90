@@ -909,10 +909,10 @@ contains
     call this%eflx_dynbal_dribbler%Restart(bounds, ncid, flag)
 
 !YS
-    call restartvar(ncid=ncid, flag=flag, varname='TRAFFICFLUX_L', xtype=ncd_double,  &
-         dim1name='landunit', &
-         long_name='urban traffic sensible heat flux', units='watt/m^2', &
-         interpinic_flag='interp', readvar=readvar, data=this%eflx_traffic_lun) 
+!YS    call restartvar(ncid=ncid, flag=flag, varname='TRAFFICFLUX_L', xtype=ncd_double,  &
+!YS        dim1name='landunit', &
+!YS         long_name='urban traffic sensible heat flux', units='watt/m^2', &
+!YS         interpinic_flag='interp', readvar=readvar, data=this%eflx_traffic_lun) 
 !YS
   end subroutine Restart
   !-----------------------------------------------------------------------

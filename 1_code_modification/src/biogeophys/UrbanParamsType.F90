@@ -133,6 +133,9 @@ contains
     use column_varcon   , only : icol_roof, icol_sunwall, icol_shadewall
     use column_varcon   , only : icol_road_perv, icol_road_imperv, icol_road_perv
     use landunit_varcon , only : isturb_MIN
+!YS
+    use landunit_varcon   , only : isturb_tbd, isturb_hd, isturb_md
+!YS    
     !
     ! !ARGUMENTS:
     class(urbanparams_type) :: this
@@ -253,7 +256,7 @@ contains
              !write(iulog,*)'this%improad_width(l)  = ',this%improad_width(l)
              if ((this%improad_width(l) / 3.5) < 0.5) then
                 this%nlane_traffic(l) = 0
-             else if ((this%improad_width(l) / 3.5) < 1.0) then  
+             else if ((this%improad_width(l) / 3.5) < 2.0) then  
                 this%nlane_traffic(l) = 1
              else 
                 lane_count = floor(this%improad_width(l) / 3.5)
@@ -263,6 +266,13 @@ contains
                     this%nlane_traffic(l) = lane_count
                 end if
              end if 
+             if lun%itype(l) .eq. isturb_tbd then
+                this%nlane_traffic(l) = min(this%nlane_traffic(l), 8)
+             else if (lun%itype(l) .eq. isturb_hd) then
+                this%nlane_traffic(l) = min(this%nlane_traffic(l), 6)  
+             else if (lun%itype(l) .eq. isturb_md) then   
+                this%nlane_traffic(l) = min(this%nlane_traffic(l), 4)
+             end if   
           else
 !YS             this%eflx_traffic_factor(l) = 0.0_r8
              this%nlane_traffic(l) = 0

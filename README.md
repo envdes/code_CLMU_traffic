@@ -2,12 +2,12 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16886810.svg)](https://doi.org/10.5281/zenodo.16886810)
 ## Introduction
 
-This repository is supplementary to the manuscript "**Sun, Y., Oleson, K. W., & Zheng, Z. (2025). Modeling urban traffic heat flux in Community Earth System Model**".
+This repository is supplementary to the paper "Sun, Y., Oleson, K. W., & Zheng, Z. (2026). Modeling urban traffic heat flux in Community Earth System Model: Formulation and validation for two test sites. *Journal of Advances in Modeling Earth Systems*, 18, e2025MS005435. https://doi.org/10.1029/2025MS005435". A related dataset is open access at: https://doi.org/10.6084/m9.figshare.31891603.
 
 The objectives of this project are:
 
 - Modify the CESM source code to incorporate an urban traffic heat flux module for quantifying anthropogenic heat flux (AHF);
-- Validate model performance with the new traffic module at two sites;
+- Validate model performance with the new traffic module at two test sites;
 - Examine traffic-induced thermal impacts on the urban environment and building energy use.
 
 ## Script and data
@@ -36,7 +36,7 @@ The standard source code comes from [CTSM](https://github.com/ESCOMP/CTSM), with
 
 ### [2_single_point_simulations](./2_single_point_simulations)
 
-We conducted a pair of single-point simulations (CNTL and TRAF) at the [Capitole of Toulouse, France (FR-Capitole)](./2_single_point_simulations/FR-Capitole) and [Manchester, UK (UK-Manchester)](./2_single_point_simulations/UK-Manchester).
+We conducted a pair of single-point simulations (CNTL and TRAF) at the [Capitole of Toulouse, France (FR-Capitole)](./2_single_point_simulations/FR-Capitole), and [Manchester, UK (UK-Manchester)](./2_single_point_simulations/UK-Manchester).
 
 - FR-Capitole
   - [SourceMods](./2_single_point_simulations/FR-Capitole/SourceMods): code used at FR-Capitole simulations with additional modifications to use local parameters. 
@@ -56,7 +56,7 @@ The scripts listed below are used to visualize two sites with corresponding traf
 | 3.1  | [Metadata at FR-Capitole](./3_simulation_output_analysis/3.1_FR-Capitole_metadata) | Use [Export.ipynb](./3_simulation_output_analysis/3.1_FR-Capitole_metadata/Export.ipynb) to get the diurnal mean vehicle volume | [Figure.ipynb](./3_simulation_output_analysis/3.1_FR-Capitole_metadata/Figure.ipynb) |
 | 3.2  | [Metadata at UK-Manchester](./3_simulation_output_analysis/3.2_UK-Manchester_metadata) | Use [Export.ipynb](/3_simulation_output_analysis/3.2_UK-Manchester_metadata/Export.ipynb) to get the diurnal mean vehicle volume | [Figure.ipynb](./3_simulation_output_analysis/3.2_UK-Manchester_metadata/Figure.ipynb) |
 
-The scripts listed below are used for processing CNTL (`urban_traffic=.false.`) and TRAF (`urban_traffic=.true.`) simulation output and visualization.
+The scripts listed below process CNTL (`urban_traffic=.false.`) and TRAF (`urban_traffic=.true.`) simulation output and visualization.
 
 | Num. | Subject                                                      | Output data process                                          | Visualization                                                |
 | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -65,8 +65,8 @@ The scripts listed below are used for processing CNTL (`urban_traffic=.false.`) 
 | 3.5  | [Model validation at UK-Manchester](./3_simulation_output_analysis/3.5_UK-Manchester_model_validation/) | Use [Export.ipynb](./3_simulation_output_analysis/3.5_UK-Manchester_model_validation/Export.ipynb) to get monthly mean and hourly mean variables in comparison with observations | [Figure.ipynb](./3_simulation_output_analysis/3.5_UK-Manchester_model_validation/Figure.ipynb) |
 | 3.6  | [Heat stress at UK-Manchester](./3_simulation_output_analysis/3.6_UK-Manchester_heat_stress/) | Use [Export.ipynb](./3_simulation_output_analysis/3.6_UK-Manchester_heat_stress/Export.ipynb) to get heat stress indices | [Figure.ipynb](./3_simulation_output_analysis/3.6_UK-Manchester_heat_stress/Figure.ipynb) |
 | 3.7  | [Compare temperatures](./3_simulation_output_analysis/3.7_compare_temperatures/) | Use [Export.ipynb](./3_simulation_output_analysis/3.7_compare_temperatures/Export.ipynb) to get the difference in temperature between TRAF and CNTL simulations | [Figure.ipynb](./3_simulation_output_analysis/3.7_compare_temperatures/Figure.ipynb) |
-| 3.8  | [Compare monthly AHF](./3_simulation_output_analysis/3.8_compare_monthly_ahf/) | Use [Export.ipynb](./3_simulation_output_analysis/3.8_compare_monthly_ahf/Export.ipynb) to get the monthly mean AHF from CNTL, TRAF, and [AH4GUC](https://figshare.com/articles/dataset/Global_1-km_present_and_future_hourly_anthropogenic_heat_flux/12612458/6) | [Figure.ipynb](./3_simulation_output_analysis/3.8_compare_monthly_ahf/Figure.ipynb) |
-| 3.9  | [Model sensitivity](./3_simulation_output_analysis/3.8_model_sensitivity) | Use [Export.ipynb](./3_simulation_output_analysis/3.8_model_sensitivity/Export.ipynb) to export Taylor Diagram metrics | [Figure.ipynb](./3_simulation_output_analysis/3.8_model_sensitivity/Figure.ipynb) |
+| 3.8  | [Model sensitivity at FR-Capitole](./3_simulation_output_analysis/3.8_FR-Capitole_model_sensitivity) | Use [Export.ipynb](./3_simulation_output_analysis/3.8_FR-Capitole_model_sensitivity/Export.ipynb) to export Taylor Diagram metrics | [Figure.ipynb](./3_simulation_output_analysis/3.8_FR-Capitole_model_sensitivity/Figure.ipynb) |
+| 3.9  | [Model sensitivity at UK-Manchester](./3_simulation_output_analysis/3.9_UK-Manchester_model_sensitivity) | Use [Export.ipynb](./3_simulation_output_analysis/3.9_UK-Manchester_model_sensitivity/Export.ipynb) to export changes due to traffic parameter perturbation | [Figure.ipynb](./3_simulation_output_analysis/3.9_UK-Manchester_model_sensitivity//Figure.ipynb) |
 
 ### [4_illustration](./4_illustration)
 
@@ -80,21 +80,31 @@ The figures listed below are used to illustrate the details of the model workflo
 | Traffic-induced changes in heat flux and temperatures at FR-Capitole | [Figure](./4_illustration/FR-Capitole_seasonal_difference.pdf) |
 | Traffic-induced changes in heat flux and temperatures at UK-Manchester | [Figure](./4_illustration/UK-Manchester_seasonal_difference.pdf) |
 | Community Land Model                                         | [Figure](./4_illustration/CLM.pdf)                           |
+| Future work                                                  | [Figure](./4_illustration/future_work.pdf)                   |
 
 ### [5_suplimentary_information](./5_suplimentary_information)
 
 The scripts listed below show supplementary information such as input data and simulation results.
 
-| Num. | Subject                                                      | Analysis       | Visualization                                                |
-| ---- | ------------------------------------------------------------ | -------------- | ------------------------------------------------------------ |
-| 5.1  | [Global number of lanes](./5_suplimentary_information/5.1_global_number_of_lanes/) | Not applicable | [Figure.ipynb](./5_suplimentary_information/5.1_global_number_of_lanes/Figure.ipynb) |
+| Num. | Subject                                                      | Analysis                                                     | Visualization                                                |
+| ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 5.1  | [Global number of lanes](./5_suplimentary_information/5.1_global_number_of_lanes/) | Use [Export.ipynb](./5_suplimentary_information/5.1_global_number_of_lanes/Export.ipynb) to export the global number of traffic lanes | [Figure.ipynb](./5_suplimentary_information/5.1_global_number_of_lanes/Figure.ipynb) |
+| 5.2  | [Computational cost](./5_suplimentary_information/5.2_computation) | Use [Export.ipynb](./5_suplimentary_information/5.2_computation/Export.ipynb) to describe [computational timing](./5_suplimentary_information/5.2_computation/timing/) | [Figure.ipynb](./5_suplimentary_information/5.2_computation/Figure.ipynb) |
+
+**Note**: 
+
+- We also provide [supporting information](./5_suplimentary_information/2025ms00543-sup-0001-supporting information si-s01.docx) along with the journal article.
+
+- Based on the model development, future work could be as follows:
+
+<img src="./4_illustration/future_work.png" alt="future_work" width="600">
 
 ## Acknowledgements
 
 - This work was supported by the Natural Environment Research Council [grant number UKRI1294], and the UKRI Harmonised Impact Acceleration Account, funded via the Economic & Social Research Council [grant number ES/X004759/1] and Engineering & Physical Sciences Research Council [grant number EP/X525753/1].
 - This work used the [ARCHER2 UK National Supercomputing Service](https://www.archer2.ac.uk) and [JASMIN, the UK’s collaborative data analysis environment](https://www.jasmin.ac.uk). 
 - We gratefully acknowledge Transport for Greater Manchester (TfGM) for providing traffic data to support this research.
-- We appreciate Dr. Xiaodan Xu from Lawrence Berkeley National Laboratory for her valuable insights. 
+- We appreciate [Dr. Xiaodan Xu](https://profiles.lbl.gov/177820-xiaodan-xu) from Lawrence Berkeley National Laboratory for her valuable insights. 
 - [Z. Z.](https://github.com/zhonghua-zheng) appreciates the support provided by the academic start-up funds from the Department of Earth and Environmental Sciences at The University of Manchester. 
 - [Y. S.](https://github.com/YuanSun-UoM) is supported by Zhonghua Zheng's academic start-up funds.
 - Contributions from [K. W. O.](https://staff.ucar.edu/users/oleson) are based upon work supported by the NSF National Center for Atmospheric Research, which is a major facility sponsored by the U.S. National Science Foundation under Cooperative Agreement No. 1852977.

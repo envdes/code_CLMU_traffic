@@ -1,0 +1,88 @@
+---------------- TIMING PROFILE ---------------------
+  Case        : UK-MCR_traffic
+  LID         : 11775474.251204-153849
+  Machine     : archer2
+  Caseroot    : /work/n02/n02/yuansun/cesm/runs/0project8/UK-MCR_traffic
+  Timeroot    : /work/n02/n02/yuansun/cesm/runs/0project8/UK-MCR_traffic/Tools
+  User        : yuansun
+  Curr Date   : Thu Dec  4 15:45:55 2025
+  Driver      : CMEPS
+  grid        : a%CLM_USRDAT_l%CLM_USRDAT_oi%null_r%null_g%null_w%null_z%null_m%null
+  compset     : 2000_DATM%1PT_CLM60%SP_SICE_SOCN_SROF_SGLC_SWAV_SESP
+  run type    : branch, continue_run = FALSE (inittype = FALSE)
+  stop option : nminutes, stop_n = 525600
+  run length  : 365 days (365.0 for ocean)
+
+  component       comp_pes    root_pe   tasks  x threads instances (stride) 
+  ---------        ------     -------   ------   ------  ---------  ------  
+  cpl = cpl        1           0        1      x 1       1      (1     ) 
+  atm = datm       1           0        1      x 1       1      (1     ) 
+  lnd = clm        1           0        1      x 1       1      (1     ) 
+  ice = sice       1           0        1      x 1       1      (1     ) 
+  ocn = socn       1           0        1      x 1       1      (1     ) 
+  rof = srof       1           0        1      x 1       1      (1     ) 
+  glc = sglc       1           0        1      x 1       1      (1     ) 
+  wav = swav       1           0        1      x 1       1      (1     ) 
+  esp = sesp       1           0        1      x 1       1      (1     ) 
+
+  total pes active           : 1 
+  mpi tasks per node         : 128 
+  pe count for cost estimate : 128 
+
+  Overall Metrics: 
+    Model Cost:               2.51   pe-hrs/simulated_year 
+    Model Throughput:      1225.17   simulated_years/day 
+
+    Init Time   :     318.256 seconds 
+    Run Time    :      70.521 seconds        0.193 seconds/day 
+    Final Time  :       0.028 seconds 
+
+
+Runs Time in total seconds, seconds/model-day, and model-years/wall-day 
+CPL Run Time represents time in CPL pes alone, not including time associated with data exchange with other components 
+
+    TOT Run Time:      70.521 seconds        0.193 seconds/mday      1225.17 myears/wday 
+    CPL Run Time:      17.480 seconds        0.048 seconds/mday      4942.65 myears/wday 
+    ATM Run Time:      15.569 seconds        0.043 seconds/mday      5549.31 myears/wday 
+    LND Run Time:      26.891 seconds        0.074 seconds/mday      3212.98 myears/wday 
+    ICE Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday 
+    OCN Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday 
+    ROF Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday 
+    GLC Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday 
+    WAV Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday 
+    ESP Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday 
+    CPL COMM Time:      4.906 seconds        0.013 seconds/mday     17611.09 myears/wday 
+   NOTE: min:max driver timers (seconds/day):   
+                            CPL (pes 0 to 0) 
+                                                ATM (pes 0 to 0) 
+                                                LND (pes 0 to 0) 
+                                                ICE (pes 0 to 0) 
+                                                OCN (pes 0 to 0) 
+                                                ROF (pes 0 to 0) 
+                                                GLC (pes 0 to 0) 
+                                                WAV (pes 0 to 0) 
+                                                ESP (pes 0 to 0) 
+
+
+
+More info on coupler timing:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
