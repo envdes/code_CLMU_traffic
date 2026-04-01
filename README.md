@@ -82,18 +82,18 @@ The figures listed below are used to illustrate the details of the model workflo
 | Community Land Model                                         | [Figure](./4_illustration/CLM.pdf)                           |
 | Future work                                                  | [Figure](./4_illustration/future_work.pdf)                   |
 
-### [5_suplimentary_information](./5_suplimentary_information)
+### [5_supplementary_information](./5_supplementary_information)
 
 The scripts listed below show supplementary information such as input data and simulation results.
 
 | Num. | Subject                                                      | Analysis                                                     | Visualization                                                |
 | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 5.1  | [Global number of lanes](./5_suplimentary_information/5.1_global_number_of_lanes/) | Use [Export.ipynb](./5_suplimentary_information/5.1_global_number_of_lanes/Export.ipynb) to export the global number of traffic lanes | [Figure.ipynb](./5_suplimentary_information/5.1_global_number_of_lanes/Figure.ipynb) |
-| 5.2  | [Computational cost](./5_suplimentary_information/5.2_computation) | Use [Export.ipynb](./5_suplimentary_information/5.2_computation/Export.ipynb) to describe [computational timing](./5_suplimentary_information/5.2_computation/timing/) | [Figure.ipynb](./5_suplimentary_information/5.2_computation/Figure.ipynb) |
+| 5.1  | [Global number of lanes](./5_supplementary_information/5.1_global_number_of_lanes/) | Use [Export.ipynb](./5_supplementary_information/5.1_global_number_of_lanes/Export.ipynb) to export the global number of traffic lanes | [Figure.ipynb](./5_supplementary_information/5.1_global_number_of_lanes/Figure.ipynb) |
+| 5.2  | [Computational cost](./5_supplementary_information/5.2_computation) | Use [Export.ipynb](./5_supplementary_information/5.2_computation/Export.ipynb) to describe [computational timing](./5_supplementary_information/5.2_computation/timing/) | [Figure.ipynb](./5_supplementary_information/5.2_computation/Figure.ipynb) |
 
 **Note**: 
 
-- We also provide [supporting information](./5_suplimentary_information/2025ms00543-sup-0001-supporting information si-s01.docx) along with the journal article.
+- We also provide [supporting information](./5_supplementary_information/2025ms00543-sup-0001-supporting information si-s01.docx) along with the journal article.
 
 - Based on the model development, future work could be as follows:
 
